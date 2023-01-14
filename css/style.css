@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 1.7;
 }
 
@@ -32,7 +32,6 @@ a {
   overflow: hidden;
 }
 
-
 /* UTILITY CLASSES */
 #container {
   max-width: 960px;
@@ -47,7 +46,7 @@ a {
 
 @media (min-width: 1200px) {
   body {
-      background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
   }
 }
 
@@ -62,15 +61,14 @@ a {
 }
 
 .nav-link {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-
 
 .message-box {
   margin: 1.5rem;
@@ -124,3 +122,63 @@ a {
   text-align: center;
 }
 
+#pricing {
+  margin-top: 60px;
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
+}
+.product {
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+.product h3 {
+  background-color: #ddd;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-weight: 600;
+  line-height: inherit;
+  font-size: inherit;
+}
+.product .price {
+  font-weight: bold;
+  font-size: inherit;
+  margin: 10px 0;
+}
+.product ol {
+  list-style: none;
+}
+.product button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+.product button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+#footer {
+  background-color: #ddd;
+  text-align: right;
+  padding: 15px 20px;
+  margin-top: 40px;
+}
+#footer ul {
+  list-style: none;
+}
+#footer .links li {
+  display: inline-block;
+}
+#footer .links li a {
+  text-decoration: none;
+  margin-left: 15px;
+  color:#000;
+}
